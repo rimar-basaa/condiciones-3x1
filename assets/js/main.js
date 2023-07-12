@@ -17,17 +17,22 @@ function tarea2() {
     let countstick = document.querySelector('#countstick');   
     
     if ( Number(stick1.value) < 0){
-        countstick.innerHTML = "Valor NO puede ser Menor de 0";        
+        countstick.style.color = "red";
+        countstick.innerHTML = "Valor NO puede ser Menor de 0";                
         stick1.value = "0";
     } else if (Number(stick2.value) < 0){
-        countstick.innerHTML = "Valor NO puede ser Menor de 0";        
+        countstick.style.color = "red";
+        countstick.innerHTML = "Valor NO puede ser Menor de 0";                
         stick2.value = "0";
     } else if (Number(stick3.value) < 0){
-        countstick.innerHTML = "Valor NO puede ser Menor de 0";        
+        countstick.style.color = "red";
+        countstick.innerHTML = "Valor NO puede ser Menor de 0";                
         stick3.value = "0";
     } else if (total <= 10){
-        countstick.innerHTML = "Llevas " + total + " sticker";
+        countstick.style.color = "white";
+        countstick.innerHTML = "Llevas " + total + " sticker";        
     } else {
+        countstick.style.color = "white";
         countstick.innerHTML = "Llevas DEMASIADOS sticker";
     }    
 }
