@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafio 2 JS</title>
+</head>
+<body>
+    <nav class="nav">
+        <a class="item" href="#">Tarea 1</a>
+        <a class="item" href="#tarea2">Tarea 2</a>
+        <a class="item" href="#tarea3">Tarea 3</a>
+    </nav>
+
+    <section id="tarea1">
+        <div class="main1">
+            <div class="img" onclick="tarea1()" id="img"></div>            
+        </div>
+    </section>
+
+    <section id="tarea2">
+        <div class="main2">
+            <h3>Puedes llevar hasta 10 Sticker en total</h2>
+            <div class="container">
+                <div class="stick">
+                    <div class="image img1"></div>
+                    <input type="number" min="0" value="0" id="stick1" class="input">
+                </div>
+                <div class="stick">
+                    <div class="image img2"></div>
+                    <input type="number" min="0" value="0" id="stick2" class="input">
+                </div>
+                <div class="stick">
+                    <div class="image img3"></div>
+                    <input type="number" min="0" value="0" id="stick3" class="input">
+                </div>
+            </div>
+            <p id="countstick">Llevas 0 sticker</p>
+            <button class="btn" onclick="tarea2()">Verificar</button>
+        </div>
+    </section>
+
+    <section id="tarea3">
+        <div class="main3">
+            <h3>Ingresar el password</h3>
+            <div>
+                <select class="selector" id="selector1">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select class="selector" id="selector2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select class="selector" id="selector3">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>    
+            <button class="btn" onclick="tarea3()">Validar</button>
+            <p id="msg"></p>
+        </div>        
+    </section>
+
+
+    
+    <script src="./assets/js/main.js"></script>    
+</body>
+</html>
